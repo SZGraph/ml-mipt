@@ -32,8 +32,8 @@ class LossAndDerivatives:
         Comment: If Y is two-dimentional, average the error over both dimentions.
         """
 
-        # YOUR CODE HERE    
-        return 
+        # YOUR CODE HERE          
+        return np.linalg.norm(X.T@w - Y,1)/X.Shape[0]
 
     @staticmethod
     def l2_reg(w):
